@@ -44,9 +44,7 @@ _pickImage(){
   ImagePicker.pickImage(source: ImageSource.gallery).then((imgFile) {
       String imgString = Utility.base64String(imgFile.readAsBytesSync());
       _photo=imgString;
-      // Photo photo = Photo(0, imgString);
-      // dbHelper.save(photo);
-      // refreshImages();
+      
     });
 }
   _submit() {
@@ -78,7 +76,7 @@ _pickImage(){
 
   @override
   void initState() {
-    // TODO: implement initState
+    
     super.initState();
 
     if (widget.task != null) {
@@ -92,7 +90,7 @@ _pickImage(){
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    
     _dateController.dispose();
     super.dispose();
   }

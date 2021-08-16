@@ -4,7 +4,7 @@ class Task {
   DateTime date;
   String director;
   String photo;
-  int status; // 0 - complete, 1- complete
+  int status; 
 
   Task({this.title, this.date, this.director, this.status,this.photo});
   Task.withId({this.id, this.title, this.date, this.director, this.status,this.photo});

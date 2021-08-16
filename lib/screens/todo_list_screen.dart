@@ -48,16 +48,7 @@ class _TodoListScreeenState extends State<TodoListScreeen> {
                         ? TextDecoration.none
                         : TextDecoration.lineThrough)),
                         trailing: Container(height: 50,width: 50,child: ClipRRect(borderRadius: BorderRadius.circular(5),child: Utility.imageFromBase64String(task.photo),)),
-                        // trailing: CircleAvatar(radius: 23,child: CircleAvatar(radius: 60,child: Utility.imageFromBase64String(task.photo),),),
-            // trailing: Checkbox(
-            //     onChanged: (value) {
-            //       task.status = value ? 1 : 0;
-            //       DatabaseHelper.instance.updateTask(task);
-            //       _updateTaskList();
-            //       print(value);
-            //     },
-            //     activeColor: Theme.of(context).primaryColor,
-            //     value: task.status == 1 ? true : false),
+                        
             onTap: () => Navigator.push(
                 context,
                 CupertinoPageRoute(

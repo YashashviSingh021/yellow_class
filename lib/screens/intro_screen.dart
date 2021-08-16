@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_overboard/flutter_overboard.dart';
+import 'package:todo/screens/auth.dart';
 import 'package:todo/screens/todo_list_screen.dart';
 
 /// this class uses this library flutter_overboard
@@ -40,14 +41,14 @@ class _IntroOverboardPageState extends State<IntroOverboardPage>
           // Navigator.of(context).pushNamed(TodoListScreeen.routeName);
           Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => TodoListScreeen()),
+    MaterialPageRoute(builder: (context) => AuthScreen()),
   );
         },
         finishCallback: () {
           // Navigator.of(context).pushNamed(TodoListScreeen.routeName);
           Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => TodoListScreeen()),
+    MaterialPageRoute(builder: (context) => AuthScreen()),
   );
         },
       ),
@@ -70,12 +71,7 @@ class _IntroOverboardPageState extends State<IntroOverboardPage>
         title: 'Amazon Prime movies',
         body: '',
         doAnimateImage: true),
-    // PageModel(
-    //     color: const Color(0xFF9B90BC),
-    //     imageAssetPath: 'assets/images/03.png',
-    //     title: 'Screen 3',
-    //     body: 'Connect with the people from different places',
-    //     doAnimateImage: true),
+    
     PageModel.withChild(
       
         child: Padding(

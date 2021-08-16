@@ -32,6 +32,8 @@ dependencies:
   flutter_overboard: ^2.0.1
   image_picker: ^0.6.0+3
   shared_preferences: ^0.5.0
+  firebase_auth: ^0.16.0
+  google_sign_in: ^4.4.4
 
 dev_dependencies:
   flutter_test:
